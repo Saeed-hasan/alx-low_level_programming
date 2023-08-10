@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE | tr .c .o < $CFILE
+gcc -c $CFILE | tr .c .o 
