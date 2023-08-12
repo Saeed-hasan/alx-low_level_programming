@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: no char 
+ * Description: no char base no 10
  * starting from 0, followed by a new line.
  * Return: 0
 */
