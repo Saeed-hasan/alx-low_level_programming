@@ -2,13 +2,13 @@
 /**
  * _abs - return abs value
  * @n : number to check
- * Return:0 or 1
+ * Return: absloute value
  */
 int _abs(int n)
 {
 	if (n >= 0)
 	{
-		return (0);
+		return (n);
 	}
 	else
 	{
