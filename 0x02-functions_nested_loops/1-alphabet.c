@@ -1,15 +1,15 @@
 #include"main.h"
 /**
- * main - entry point
+ * print_alphabet - entry point
  * Return:0
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	char c = 'a';
+	int i;
 
-	for (c = 'a' ; c <= 'z' ; c++)
+	for (i = 97; c <= 122; c++)
 	{
-		_putchar("%c", c);
+		_putchar("%d", i);
 	}
 	_putchar('\n');
 }
