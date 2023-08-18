@@ -1,7 +1,8 @@
 #include"main.h"
+
 /**
- * _isupper -  checks for uppercase letter
- * @c : charcter to check the case
+ * _isupper -  check if c is upper
+ * @c : input for alphabet
  * Return:0 or 1
  */
 int _isupper(int c);
@@ -14,5 +15,4 @@ int _isupper(int c);
 	{
 		return (0);
 	}
-	_putchar('\n');
 }
