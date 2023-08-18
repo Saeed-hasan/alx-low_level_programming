@@ -4,7 +4,7 @@
  * @c : input for alphabet
  * Return:0 or 1
  */
-int _isupper(int c);
+int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 	{
