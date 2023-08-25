@@ -14,7 +14,7 @@ for (i = 0; dest[i] != '\0'; i++)
 
 do {
 	x++;
-	dest[i] = src[a];
+	dest[i] = src[x];
 	i++;
 } while (src[x] != '\0');
 
