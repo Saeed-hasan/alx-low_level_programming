@@ -1,4 +1,7 @@
+#include <stdio.h>
+#include <string.h>
 #include "main.h"
+
 /**
  * rev_string - prints reversed string, followed by a new line
  * @s: pointer to the string to print
@@ -7,23 +10,15 @@
 
 void rev_string(char *s)
 {
-
-	int len, x, HALF;
+	int length = strlen(s);
+	int middle = length / 2;
+	int i;
 	char temp;
 
-	for (len = 0; s[len] != '\0'; len++)
-	;
-
-	x = 0;
-
-	HALF = len / 2;
-
-	while (HALF--)
+	for (i = 0; i < middle; i++)
 	{
-		temp = s[len - x - 1];
-		s[len - x - 1] = s[x];
-		s[x] = temp;
-		x++;
+		temp = s[i];
+		s[i] = s[length - i - 1];
+		s[length - i - 1] = temp;
 	}
-
 }
