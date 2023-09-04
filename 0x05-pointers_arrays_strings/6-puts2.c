@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * puts2 - prints a string, followed by a new line,
  * @str: pointer to the string to print
@@ -13,10 +14,10 @@ void puts2(char *str)
 	{
 		if (x % 2 == 0)
 		{
-			_putchar(str[x]);
+			putchar(str[x]);
 		}
 
 		x++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
