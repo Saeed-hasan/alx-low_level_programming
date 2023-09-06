@@ -10,7 +10,7 @@
  */
 char *_strdup(char *str)
 {
-	char *m = malloc(strlen(str) + 1);
+	char *m;
 
 	if (str == NULL)
 	{
