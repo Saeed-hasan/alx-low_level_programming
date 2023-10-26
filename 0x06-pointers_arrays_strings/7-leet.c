@@ -8,18 +8,18 @@
 
 char *leet(char *s)
 {
-	int x, xx;
-	char s1[] = "aeotl";
-	char S1[] = "AEOTL";
-	char s2[] = "43071";
+	int i, j;
+	char lower_case_letters[] = "aeotl";
+	char upper_case_letters[] = "AEOTL";
+	char numbers[] = "43071";
 
-	for (x = 0; s[x] != '\0'; x++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (xx = 0; xx < 5; xx++)
+		for (j = 0; j < 5; j++)
 		{
-			if (s[x] == s1[xx] || s[x] == S1[xx])
+			if (s[i] == lower_case_letters[j] || s[i] == upper_case_letters[j])
 			{
-				s[x] = s2[xx];
+				s[i] = numbers[j];
 				break;
 			}
 		}
