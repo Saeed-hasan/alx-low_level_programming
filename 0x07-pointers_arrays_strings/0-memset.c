@@ -2,9 +2,9 @@
 
 /**
  * _memset - ironnou
- * @s: pointer to char params
- * @b: data to change
- * @n: index
+ * @s: memory area
+ * @b: constant
+ * @n: size of array
  * Return: *s
  */
 

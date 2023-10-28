@@ -2,24 +2,23 @@
 
 /**
  * _strchr - prints found c
- * @s: pointer to char
- * @c: char params to found
+ * @s: string that we search in
+ * @c: char we looking for
  * Return: *S
 */
 
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	while (*s != '\0'&& *s != c)
 	{
-		if (*s == c)
-		{
-			return (s);
-		}
 		s++;
 	}
 	if (*s == c)
 	{
 		return (s);
 	}
-return (0);
+	else
+	{
+		return (0);
+	}
 }
