@@ -1,21 +1,20 @@
 #include "lists.h"
+
 /**
- * print_dlistint - fun that print a linked list
- * @h: pointer to the first element in the list
- * Return: size of the linked list
- */
+ * dlistint_len - returns the number of elements in a linked dlistint_t list.
+ * @h: pointer to the list.
+ * Return: number of nodes.
+ **/
 size_t dlistint_len(const dlistint_t *h)
 {
-	const dlistint_t *temp = h;
-	int i;
+	const dlistint_t *node = h;
+	size_t cont = 0;
 
-	if (h == NULL)
-		return (0);
-
-	for (i = 0; temp; i++)
+	while (node)
 	{
-		temp = temp->next;
+		cont++;
+		node = node->next;
 	}
 
-	return (i);
+	return (cont);
 }
