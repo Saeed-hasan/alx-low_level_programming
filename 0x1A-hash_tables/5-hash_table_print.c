@@ -18,7 +18,6 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			printf("%s'%s': '%s'", spliter, node->key, node->value);
 			spliter = ", ";
-			node = node->next;
 		}
 	}
 	puts("}");
