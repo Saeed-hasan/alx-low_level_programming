@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
+ * *hash_table_set - add an elem to the hash table
  * create_and_add_node - malloc, set values, and insert node into hash table
  * @ht: hash table
  * @key: key; can't be empty string
@@ -37,7 +38,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			node->value = strdup(value);
 			node->next = ht->array[index];
 			ht->array[index] = node;
-			return (1);
 		}
+		return (1);
 	}
 }
