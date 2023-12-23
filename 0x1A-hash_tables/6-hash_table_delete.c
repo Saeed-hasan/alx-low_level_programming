@@ -11,7 +11,8 @@ void hash_table_delete(hash_table_t *ht)
 
 	for (i = 0; i < ht->size; i++)
 	{
-		for (tmp = ht->array[i]; tmp != NULL; tmp = node->next)
+		node = ht->array[i];
+		while (node != NULL)
 		{
 			tmp = node->next;
 			free(node->key);
