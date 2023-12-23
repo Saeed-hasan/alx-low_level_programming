@@ -1,4 +1,6 @@
 #include "hash_tables.h"
+#include <string.h>
+#include <stdlib.h>
 /**
  * create_and_add_node - malloc, set values, and insert node into hash table
  * @ht: hash table
