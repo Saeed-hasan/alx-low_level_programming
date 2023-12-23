@@ -9,12 +9,12 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int i;
 	char *spliter = "";
 
-	if (!ht || !ht->array)
+	if (ht == NULL || ht->array == NULL)
 		return;
 	putchar('{');
 	for (i = 0; i < ht->size; i++)
 	{
-		for (node = (ht->array)[i]; node != NULL; node = node->next)
+		for (node = ht->array[i]; node != NULL; node = node->next)
 		{
 			printf("%s'%s': '%s'", spliter, node->key, node->value);
 			spliter = ", ";
